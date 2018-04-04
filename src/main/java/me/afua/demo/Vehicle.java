@@ -4,6 +4,7 @@ public class Vehicle {
     private int weight;
     private String brand;
     private int speed;
+    private String colour;
 
     public Vehicle() {
     }
@@ -37,7 +38,15 @@ public class Vehicle {
         this.speed = speed;
     }
 
-    /*Non getter/setter methods*/
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    /*Non getter/setter methods are listed below this point */
     public String started()
     {
         return "This vehicle has started";
